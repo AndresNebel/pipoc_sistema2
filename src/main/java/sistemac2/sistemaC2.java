@@ -39,6 +39,7 @@ public class sistemaC2 {
 								.replace("__value__", value); //I am the senate!
 			orders += "\n"+newOrder; 
 		}
+		orders += "</orders>";
 		return orders;		
 	}
 	
