@@ -15,7 +15,7 @@ public class sistemaC2 {
 			"<order>\n" + 
 			"  <ID>__orderID__</ID>\n" + 
 			"  <name>Orden de importación</name>\n" + 
-			"  <data>__timestamp__</date>\n" +
+			"  <date>__timestamp__</date>\n" +
 			"  <value>__value__</value>\n" +
 			"</order>";
 	
