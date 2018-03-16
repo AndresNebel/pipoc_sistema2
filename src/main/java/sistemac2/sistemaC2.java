@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 
 @Path("getOrders")
 public class sistemaC2 {
-	final static String orderTemplate = "\n" + 
+	final static String orderTemplate =  
 			"<order>\n" + 
 			"  <ID>__orderID__</ID>\n" + 
 			"  <name>Orden de importación</name>\n" + 
@@ -39,7 +39,7 @@ public class sistemaC2 {
 								.replace("__value__", value); //I am the senate!
 			orders += "\n"+newOrder; 
 		}
-		orders += "</orders>";
+		orders += "\n</orders>";
 		return orders;		
 	}
 	
