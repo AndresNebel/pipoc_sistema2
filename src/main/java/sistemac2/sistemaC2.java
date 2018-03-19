@@ -1,5 +1,7 @@
 package sistemac2;
 
+import static java.lang.System.getenv;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -34,8 +36,8 @@ public class sistemaC2 {
 		String orders = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"+
 						"<orders>";
 		
-		
-		int randomLowNumber = calendar.get(Calendar.SECOND)*5; //un numero entre 0 y 300
+		int multiplier = Integer.parseInt(getenv("orders_amount_chance_multiplier"));
+		int randomLowNumber = calendar.get(Calendar.SECOND)*multiplier; //un numero entre 0 y 300
 		for (int i=0; i<randomLowNumber; i++) {
 			String idGenerated = Integer.toString(randomGenerator.nextInt());
 			String value = Integer.toString(randomGenerator.nextInt());
